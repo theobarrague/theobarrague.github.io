@@ -1,5 +1,6 @@
 ---
 layout: post
+lang: fr
 title: Construisez un site statique avec Github et Jekyll
 ---
 
