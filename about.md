@@ -1,15 +1,14 @@
 ---
 layout: page
-title: About
+title: À propos
 permalink: /about/
 ---
 
-Some information about you!
+🌍 J'ai remplacé ma Livebox par un routeur Ubiquiti fonctionnant sous OpenWRT
+🖥 J'administre mon propre serveur maison sous Linux depuis plusieurs années
+🔒 Je préfère utiliser telnet plutôt que SSH, ou l'inverse
+👾 Partisan de l'open source
 
-### More Information
+### Contactez-moi
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[theo@barrague.fr](mailto:theo@barrague.fr)
