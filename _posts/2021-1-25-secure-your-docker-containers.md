@@ -12,10 +12,10 @@ Un point qui n'est pas nécessairement abordé, c'est le fait que `Docker` n'a p
 
 Connectez-vous avec votre utilisateur sur la machine hôte et affichez votre `uid` :
 
-``
+```
 theobarrague@hote$ id
 uid=1000(theobarrague) gid=1000(theobarrague) groups=1000(theobarrague),998(docker)
-``
+```
 
 Ok, donc visiblement vous êtes `theobarrague` et vous appartenez aussi au groupe `docker`, ça tombe bien c'est un prérequis pour utiliser `docker` sans être `root`.
 
