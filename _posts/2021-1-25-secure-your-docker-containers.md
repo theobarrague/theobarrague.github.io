@@ -1,7 +1,7 @@
 ---
 layout: post
 lang: fr
-title: Sécurisez vos conteneurs `Docker`
+title: Sécurisez vos conteneurs sous Docker
 ---
 
 Je ne présenterai pas `Docker` dans ce billet : il y a énormément de ressources qui sont disponibles en ligne ( et qui font ça beaucoup mieux que moi ). 
