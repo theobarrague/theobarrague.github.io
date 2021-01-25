@@ -28,7 +28,8 @@ root@conteneur:/#
 
 Vous êtes `root`, quelle abomination ! Affichez votre `uid` :
 
-```root@f868cf7dea0f:/# id
+```
+root@f868cf7dea0f:/# id
 root@conteneur:/# id
 uid=0(root) gid=0(root) groups=0(root)
 ```
