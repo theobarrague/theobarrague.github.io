@@ -4,7 +4,7 @@ lang: fr
 title: Sécurisez vos conteneurs sous Docker
 ---
 
-Je ne présenterai pas `Docker` dans ce billet : il y a énormément de ressources qui sont disponibles en ligne ( et qui font ça beaucoup mieux que moi ). 
+Je ne présenterai pas `Docker` dans ce billet : il y a énormément de ressources qui sont disponibles en ligne ( par exemple [docker-curriculum](https://docker-curriculum.com/) ). 
 
 Un point qui n'est pas nécessairement abordé, c'est le fait que `Docker` n'a pas inventé les conteneurs : il utilise `LXC` et `cgroups` qui permettaient déjà de faire des conteneurs.
 
