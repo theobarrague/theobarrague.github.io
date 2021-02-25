@@ -2,6 +2,7 @@
 layout: post
 lang: fr
 title: Construisez un site statique avec Github et Jekyll
+date: 2021-01-16 12:00:00
 ---
 
 J'étais à la recherche d'une solution pour créer et héberger facilement un site quand je suis tombé sur [Jekyll](https://jekyllrb.com/).
