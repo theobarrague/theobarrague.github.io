@@ -19,7 +19,7 @@ Le protocole ARP est très simple, il contient deux types de messages :
  - Je suis `w.x.y.z` et mon adresse MAC est `aa:bb:cc:dd:ee:ff`
  
  Puisqu'une image vaut mille mots ... 
- ![Schéma de fonctionnement de l'attaque ARP spoofing](https://github.com/theobarrague/theobarrague.github.io/blob/redaction/images/arp-spoof.png?raw=true)
+ ![Schéma de fonctionnement de l'attaque ARP spoofing](https://github.com/theobarrague/theobarrague.github.io/blob/master/images/arp-spoof.png?raw=true)
 
 Regardons les champs d'un message ARP :
 
