@@ -2,6 +2,7 @@
 layout: post
 lang: fr
 title: Sécurisez vos conteneurs sous Docker
+date: 2021-01-25 12:00:00
 ---
 
 Je ne présenterai pas `Docker` dans ce billet : il y a énormément de ressources qui sont disponibles en ligne ( par exemple [docker-curriculum](https://docker-curriculum.com/) ). 
