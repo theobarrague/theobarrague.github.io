@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Assistance et contact pour l’application ICI. METZ.">
+  <meta name="description" content="Assistance et réponses aux questions sur l’application ICI. METZ.">
   <meta name="theme-color" content="#0d4a3a">
   <title>Assistance — ICI. METZ</title>
   <link rel="icon" href="/assets/images/app-icon.png">
@@ -25,40 +25,49 @@
 
   <main>
     <section class="page-hero container">
-      <p class="eyebrow">Assistance</p>
+      <p class="eyebrow">Assistance · Version 0.2</p>
       <h1>Un souci ?<br>On regarde ça.</h1>
-      <p class="lead">Pour toute question concernant ICI. METZ, écrivez à <a href="mailto:theo@barrague.fr">theo@barrague.fr</a>. Pensez à indiquer votre appareil et à décrire ce qui s’est passé.</p>
-      <a class="button" href="mailto:theo@barrague.fr?subject=Assistance%20ICI.%20METZ">Contacter l’assistance</a>
+      <p class="lead">ICI. METZ est disponible sur iOS et Android. Pour signaler un problème ou poser une question, écrivez à <a href="mailto:theo@barrague.fr">theo@barrague.fr</a>.</p>
+      <a class="button" href="mailto:theo@barrague.fr?subject=Assistance%20ICI.%20METZ%200.2">Contacter l’assistance</a>
     </section>
 
     <section class="document container">
       <aside class="document-aside">
-        <strong>ICI. METZ</strong>
-        Application gratuite disponible sur iPhone, Mac et Android.<br><br>
-        Éditeur : Théo BARRAGUÉ
+        <strong>ICI. METZ 0.2</strong>
+        Disponible sur iOS et Android.<br><br>
+        Éditeur :<br>
+        Théo BARRAGUÉ
       </aside>
 
       <div class="document-content">
         <h2>Questions fréquentes</h2>
         <div class="faq">
           <details>
+            <summary>Quelles fonctions sont déjà présentes ?</summary>
+            <p>L’application comprend cinq rubriques : actualités, agenda, piscines, parkings et parcs. Chacune propose une recherche, des filtres et des fiches détaillées. Les itinéraires, appels, liens officiels, distances et notifications sont disponibles lorsque le contenu et les autorisations le permettent.</p>
+          </details>
+          <details>
+            <summary>Pourquoi l’application demande-t-elle ma position ?</summary>
+            <p>La position sert à calculer la distance vers les piscines, parkings et espaces verts et à afficher les plus proches. Vous pouvez refuser : les contenus restent accessibles sans les distances ni le classement par proximité.</p>
+          </details>
+          <details>
+            <summary>Pourquoi l’application demande-t-elle les notifications ?</summary>
+            <p>Avec votre accord, ICI. METZ peut vous prévenir de nouvelles actualités et de nouveaux événements grâce à Firebase Cloud Messaging. Vous pouvez désactiver ces notifications dans les réglages de votre appareil.</p>
+          </details>
+          <details>
             <summary>Les informations ne s’actualisent pas</summary>
-            <p>Vérifiez votre connexion internet, puis utilisez l’actualisation dans l’application. Les informations dépendent aussi de la disponibilité et de la mise à jour des sources publiques.</p>
+            <p>Vérifiez votre connexion internet, puis tirez la page vers le bas pour relancer l’actualisation. Les contenus sont fournis via Firebase Cloud Firestore et dépendent également de la disponibilité des sources publiques.</p>
           </details>
           <details>
             <summary>Une information semble incorrecte</summary>
-            <p>ICI. METZ reprend des informations publiées par des services externes. Envoyez-nous l’écran concerné, la date et l’information observée à <a href="mailto:theo@barrague.fr">theo@barrague.fr</a> afin que nous puissions vérifier son affichage.</p>
+            <p>Envoyez l’écran concerné, la date et l’information observée à <a href="mailto:theo@barrague.fr">theo@barrague.fr</a>. Les fiches indiquent ou ouvrent leur source officielle afin de faciliter la vérification.</p>
           </details>
           <details>
-            <summary>Pourquoi un article s’ouvre-t-il sur un autre site ?</summary>
-            <p>L’application permet de retrouver la publication originale. Ce lien ouvre alors le site source, qui fonctionne selon ses propres conditions et sa propre politique de confidentialité.</p>
+            <summary>Pourquoi un lien, un appel ou un itinéraire ouvre-t-il une autre application ?</summary>
+            <p>Ces actions utilisent le navigateur, le téléphone ou l’application de cartographie installée sur votre appareil. Leur fonctionnement et leur traitement des données dépendent du service choisi.</p>
           </details>
           <details>
-            <summary>Pourquoi un itinéraire ou un appel ouvre-t-il une autre application ?</summary>
-            <p>Les actions d’appel et d’itinéraire utilisent les fonctions ou applications installées sur votre appareil. ICI. METZ ne contrôle pas leur fonctionnement.</p>
-          </details>
-          <details>
-            <summary>L’application représente-t-elle la Ville de Metz ?</summary>
+            <summary>ICI. METZ représente-t-elle la Ville de Metz ?</summary>
             <p>Non. ICI. METZ est une application indépendante. Elle n’est ni affiliée, ni approuvée, ni exploitée par la Ville de Metz.</p>
           </details>
         </div>
@@ -68,14 +77,15 @@
           <p>Dans votre message, vous pouvez préciser :</p>
           <ul>
             <li>votre appareil et la version de son système ;</li>
-            <li>la version de l’application, si vous la connaissez ;</li>
-            <li>les étapes qui ont conduit au problème ;</li>
+            <li>la version de l’application, actuellement 0.2 ;</li>
+            <li>la rubrique concernée et les étapes suivies ;</li>
             <li>une capture d’écran, sans information personnelle visible.</li>
           </ul>
         </div>
 
-        <h2>Sources des informations</h2>
-        <p>Les contenus affichés proviennent notamment des sites publics <a href="https://metz.fr/" rel="noopener noreferrer">metz.fr</a> et <a href="https://piscines-metz.fr/" rel="noopener noreferrer">piscines-metz.fr</a>. Leur disponibilité, leur exactitude et leur fréquence de mise à jour dépendent de ces sources.</p>
+        <h2>Sources et services</h2>
+        <p>Les contenus sont distribués à l’application via Firebase Cloud Firestore à partir de sources publiques, notamment <a href="https://metz.fr/" rel="noopener noreferrer">metz.fr</a> et <a href="https://piscines-metz.fr/" rel="noopener noreferrer">piscines-metz.fr</a>. Leur disponibilité, leur exactitude et leur fréquence de mise à jour peuvent dépendre de ces sources.</p>
+        <p>Firebase Analytics mesure l’utilisation de l’application et Firebase Cloud Messaging gère les notifications. Consultez la <a href="/confidentialite/">politique de confidentialité</a> pour le détail.</p>
       </div>
     </section>
   </main>

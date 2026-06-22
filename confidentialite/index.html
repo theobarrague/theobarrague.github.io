@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Politique de confidentialité de l’application ICI. METZ.">
+  <meta name="description" content="Politique de confidentialité de l’application ICI. METZ : Firebase, Analytics, notifications et localisation.">
   <meta name="theme-color" content="#0d4a3a">
   <title>Confidentialité — ICI. METZ</title>
   <link rel="icon" href="/assets/images/app-icon.png">
@@ -26,63 +26,95 @@
   <main>
     <section class="page-hero container">
       <p class="eyebrow">Confidentialité</p>
-      <h1>Vos données<br>restent les vôtres.</h1>
-      <p class="lead">ICI. METZ ne collecte, ne stocke et ne vend aucune donnée personnelle liée à votre utilisation de l’application.</p>
+      <h1>Vos données,<br>sans zone floue.</h1>
+      <p class="lead">ICI. METZ ne demande pas de compte, n’affiche pas de publicité et ne vend pas vos données. L’application utilise néanmoins des services Firebase, mesure certains usages et peut accéder à votre position ou vous envoyer des notifications avec votre autorisation.</p>
     </section>
 
     <section class="document container">
       <aside class="document-aside">
         <strong>Dernière mise à jour</strong>
-        19 juin 2026<br><br>
-        Responsable de l’application :<br>
+        22 juin 2026<br><br>
+        Version concernée :<br>
+        0.2 · version publiée<br><br>
+        Responsable :<br>
         Théo BARRAGUÉ<br>
         <a href="mailto:theo@barrague.fr">theo@barrague.fr</a>
       </aside>
 
       <article class="document-content">
         <h2>1. Objet de cette politique</h2>
-        <p>La présente politique explique le traitement des données dans l’application ICI. METZ, éditée par Théo BARRAGUÉ et disponible sur iPhone, Mac et Android.</p>
+        <p>Cette politique décrit les traitements de données liés à l’application ICI. METZ et à son site public. Elle correspond au fonctionnement de la version 0.2 disponible sur iOS et Android.</p>
 
-        <h2>2. Données collectées par ICI. METZ</h2>
-        <p>ICI. METZ ne demande pas la création d’un compte et ne collecte aucune donnée personnelle à des fins publicitaires, analytiques ou commerciales.</p>
-        <p>L’application ne vend ni ne partage de données personnelles avec des annonceurs ou des courtiers en données.</p>
+        <h2>2. Responsable de l’application</h2>
+        <p>ICI. METZ est éditée à titre indépendant par Théo BARRAGUÉ. Pour toute question ou demande relative à vos données, vous pouvez écrire à <a href="mailto:theo@barrague.fr">theo@barrague.fr</a>.</p>
 
-        <h2>3. Accès aux contenus externes</h2>
-        <p>Pour afficher des informations locales, l’application accède à des données publiées par des services externes, notamment :</p>
+        <h2>3. Firebase Analytics</h2>
+        <p>La mesure d’audience Firebase Analytics est activée au démarrage de l’application. Elle sert à comprendre quelles rubriques et fonctions sont utilisées et à améliorer l’expérience.</p>
+        <p>L’application enregistre notamment :</p>
         <ul>
-          <li><a href="https://metz.fr/" rel="noopener noreferrer">metz.fr</a> pour des informations et actualités locales ;</li>
-          <li><a href="https://piscines-metz.fr/" rel="noopener noreferrer">piscines-metz.fr</a> pour les informations relatives aux piscines.</li>
+          <li>les écrans consultés et leur durée d’affichage ;</li>
+          <li>les boutons et filtres utilisés ;</li>
+          <li>la sélection d’un article, événement, équipement, parking ou parc ;</li>
+          <li>l’actualisation d’un contenu ;</li>
+          <li>l’utilisation d’une recherche, sous la forme de la longueur de la saisie et du nombre de résultats.</li>
         </ul>
-        <p>Lors de ces connexions, les serveurs des sites concernés peuvent recevoir des informations techniques habituelles, comme l’adresse IP, le type d’appareil, la date de la requête ou des données nécessaires à la transmission du contenu. Ces traitements sont effectués sous la responsabilité des éditeurs de ces services, selon leurs propres politiques de confidentialité. ICI. METZ ne contrôle pas et ne conserve pas ces éventuelles données.</p>
+        <p>Le texte saisi dans le champ de recherche et vos coordonnées géographiques ne sont pas ajoutés aux événements Analytics par l’application. Firebase Analytics peut traiter des identifiants techniques, des informations sur l’appareil et l’application, ainsi que des données de connexion selon les conditions de Google.</p>
+        <p>La version 0.2 ne propose pas encore de réglage interne pour désactiver Analytics. Pour en savoir plus, consultez les pages officielles <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Confidentialité et sécurité dans Firebase</a> et <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Règles de confidentialité de Google</a>.</p>
 
-        <h2>4. Liens et fonctions de l’appareil</h2>
+        <h2>4. Firebase Cloud Firestore</h2>
+        <p>Les actualités, événements, piscines, parkings et parcs sont récupérés depuis une base Firebase Cloud Firestore. L’application lit ces contenus publics mais ne crée pas de compte utilisateur et n’écrit pas de profil personnel dans Firestore.</p>
+        <p>Comme pour tout service en ligne, Google peut recevoir les informations techniques nécessaires à la connexion, telles que l’adresse IP, le type d’appareil, la version de l’application, la date et l’heure de la requête.</p>
+
+        <h2>5. Notifications Firebase</h2>
+        <p>ICI. METZ utilise Firebase Cloud Messaging pour proposer des notifications concernant de nouvelles actualités et de nouveaux événements.</p>
+        <ul>
+          <li>L’application demande l’autorisation du système avant d’afficher des notifications.</li>
+          <li>Si vous acceptez, Firebase génère un jeton d’inscription propre à l’installation afin d’acheminer les messages.</li>
+          <li>L’installation est abonnée aux thèmes techniques des actualités et des événements de Metz.</li>
+          <li>Un appui sur une notification peut ouvrir directement le contenu correspondant dans l’application.</li>
+        </ul>
+        <p>Vous pouvez désactiver les notifications à tout moment dans les réglages de votre appareil.</p>
+
+        <h2>6. Localisation</h2>
+        <p>Avec votre autorisation, l’application peut accéder à votre position pendant son utilisation. Elle s’en sert pour calculer et afficher la distance vers les piscines, parkings et espaces verts, puis classer ces lieux par proximité.</p>
+        <p>Dans la version actuelle, les coordonnées sont utilisées localement sur l’appareil : elles ne sont ni enregistrées dans Firestore, ni ajoutées aux événements Firebase Analytics par le code de l’application.</p>
+        <p>Vous pouvez refuser ou retirer cette autorisation dans les réglages du système. Les rubriques restent accessibles, mais l’ordre par proximité et les distances ne sont alors pas disponibles.</p>
+
+        <h2>7. Images, sources et contenus externes</h2>
+        <p>Les fiches peuvent charger des images distantes et renvoyer vers leurs publications officielles. Les contenus sont rassemblés à partir de sources publiques, notamment <a href="https://metz.fr/" rel="noopener noreferrer">metz.fr</a> et <a href="https://piscines-metz.fr/" rel="noopener noreferrer">piscines-metz.fr</a>.</p>
+        <p>Les hébergeurs des images et les sites ouverts peuvent recevoir les données techniques habituelles d’une connexion internet. Leurs propres politiques de confidentialité s’appliquent alors.</p>
+
+        <h2>8. Fonctions de l’appareil et services tiers</h2>
         <p>L’application peut vous permettre :</p>
         <ul>
-          <li>d’ouvrir une publication sur son site d’origine ;</li>
+          <li>d’ouvrir une publication ou une fiche officielle ;</li>
           <li>de lancer un itinéraire dans une application de cartographie ;</li>
-          <li>d’appeler le numéro public d’un équipement.</li>
+          <li>d’appeler le numéro public d’une piscine.</li>
         </ul>
-        <p>Lorsque vous utilisez ces fonctions, vous quittez ICI. METZ ou sollicitez un service de votre appareil. Le traitement éventuel de données relève alors du site, du système d’exploitation ou de l’application tierce utilisée.</p>
+        <p>Lorsque vous utilisez ces fonctions, le site, le système d’exploitation ou l’application tierce concernée traite les informations nécessaires selon ses propres règles.</p>
 
-        <h2>5. Contact par e-mail</h2>
-        <p>Si vous contactez l’assistance à <a href="mailto:theo@barrague.fr">theo@barrague.fr</a>, les informations contenues dans votre message sont utilisées uniquement pour répondre à votre demande. Elles ne sont ni vendues ni utilisées à des fins publicitaires. Vous pouvez demander leur suppression à tout moment en écrivant à cette même adresse.</p>
+        <h2>9. Conservation et transferts</h2>
+        <p>ICI. METZ ne maintient pas de base distincte contenant un historique nominatif des utilisateurs. Les données techniques et d’usage traitées par Firebase sont conservées selon les réglages du projet Firebase et les politiques de Google. Elles peuvent être traitées hors de l’Espace économique européen dans le cadre des mécanismes contractuels proposés par Google.</p>
+        <p>Vous pouvez demander des précisions sur les réglages de conservation applicables à la version publiée en écrivant à <a href="mailto:theo@barrague.fr">theo@barrague.fr</a>.</p>
 
-        <h2>6. Sécurité et conservation</h2>
-        <p>Puisque l’application ne collecte pas de données personnelles, aucune base de données d’utilisateurs n’est constituée par ICI. METZ. Les échanges avec les sources externes utilisent les mécanismes de sécurité proposés par ces services.</p>
+        <h2>10. Vos droits</h2>
+        <p>Selon la réglementation applicable, vous pouvez demander l’accès, la rectification, l’effacement, la limitation ou l’opposition au traitement de données vous concernant. L’absence de compte peut rendre difficile l’identification d’événements techniques associés à une installation ; toute demande sera néanmoins examinée.</p>
+        <p>Pour exercer vos droits, contactez <a href="mailto:theo@barrague.fr">theo@barrague.fr</a>. Vous pouvez également saisir l’autorité de protection des données compétente, notamment la <a href="https://www.cnil.fr/" rel="noopener noreferrer">CNIL</a> en France.</p>
 
-        <h2>7. Enfants</h2>
-        <p>ICI. METZ ne collecte sciemment aucune donnée personnelle concernant les enfants, ni aucun autre utilisateur.</p>
+        <h2>11. Enfants</h2>
+        <p>ICI. METZ ne cherche pas à collecter sciemment des données personnelles concernant des enfants. L’application ne nécessite pas de compte et ne propose ni publicité ni achat intégré.</p>
 
-        <h2>8. Évolution de cette politique</h2>
-        <p>Cette politique pourra être mise à jour si le fonctionnement de l’application ou les obligations applicables évoluent. La date de dernière mise à jour figurera en haut de cette page.</p>
+        <h2>12. Site public</h2>
+        <p>Le présent site est un site statique hébergé par GitHub Pages. Il n’intègre actuellement ni Firebase Analytics, ni Google Analytics, ni cookie publicitaire. GitHub peut toutefois traiter des journaux techniques nécessaires à l’hébergement selon sa <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">déclaration de confidentialité</a>.</p>
 
-        <h2>9. Indépendance de l’application</h2>
-        <p>ICI. METZ est une application indépendante. Elle n’est ni affiliée, ni approuvée, ni exploitée par la Ville de Metz. Les marques, noms et contenus tiers restent la propriété de leurs titulaires respectifs.</p>
+        <h2>13. Indépendance de l’application</h2>
+        <p>ICI. METZ n’est ni affiliée, ni approuvée, ni exploitée par la Ville de Metz. Les marques, noms, images et contenus tiers restent la propriété de leurs titulaires respectifs.</p>
 
-        <h2>10. Contact</h2>
-        <p>Pour toute question relative à cette politique ou à vos données, contactez :</p>
+        <h2>14. Évolution et contact</h2>
+        <p>Cette politique sera mise à jour si le fonctionnement de l’application, les services utilisés ou les obligations applicables évoluent. La date de dernière mise à jour figure en haut de cette page.</p>
         <div class="card">
           <strong>Théo BARRAGUÉ</strong><br>
+          Éditeur de ICI. METZ<br>
           <a href="mailto:theo@barrague.fr">theo@barrague.fr</a>
         </div>
       </article>
